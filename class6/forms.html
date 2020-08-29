@@ -33,6 +33,9 @@
                 <option value="dog">Dog</option>
                 <option value="rabbit">Rabbit</option>
             </select>
+            <label for="quantity">How many pets do you want to buy?</label>
+            <input type="number" min="1" max="5" id="quantity" required>
+            <p>According to municipality law, no more than 5 pets can be bought at any time.</p>
         </fieldset>
         <fieldset>
             <legend>Collar Size</legend>
@@ -45,6 +48,7 @@
         </fieldset>
         <fieldset>
             <legend>Online Account</legend>
+            <p>We can create an online account for you so you can login and track your order.</p>
             <label for="username">Username</label><input type="text" name="username" id="username">
             <label for="password">Password</label><input type="password" id="password" placeholder="minimum 8 characters" minlength="8">
         </fieldset>
