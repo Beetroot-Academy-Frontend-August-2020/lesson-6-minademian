@@ -5,13 +5,11 @@
 </head>
 <body>
     <h1>Online Pet Shop</h1>
-    <form>
+    <form action="./forms.html" method="GET">
         <fieldset>
             <legend>Information about You</legend>
-            <label for="name">Name</label><input type="text" name="name" id="name" placeholder="Your full name" minlength="10" maxlength="50"
-                required>
-            <label for="email">Email</label><input type="email" name="email" id="email" placeholder="Your email address"
-                required>
+            <label for="name">Name</label><input type="text" name="name" id="name" placeholder="Your full name" minlength="10" maxlength="50">
+            <label for="email">Email</label><input type="email" name="email" id="email" placeholder="Your email address">
             <label for="phone">Phone Number</label><input type="tel" name="phone"
                 placeholder="Your Swedish phone number" maxlength="10" id="phone" required>
         </fieldset>
@@ -62,7 +60,11 @@
             <input type="checkbox" name="marketing" id="marketing"><label for="marketing">I consent to marketing
                 information to be sent to me via email.</label>
         </fieldset>
-        <input type="submit" name="submit">
+        <input type="hidden" name="os" value="macosx">
+        <input type="button" name="test" value="Submit button (1)">
+        <input type="submit" name="Submit button (2)">
+        <button type="submit">Submit button (3)</button>
+        <button type="button">Submit button (4)</button>
     </form>
 </body>
 </html>
