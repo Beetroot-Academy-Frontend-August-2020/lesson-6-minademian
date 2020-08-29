@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <title>Online Pet Shop</title>
+    <link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Online Pet Shop</h1>
+    <form>
+        <fieldset>
+            <legend>Information about You</legend>
+            <label for="name">Name</label><input type="text" name="name" id="name" placeholder="Your full name"
+                required>
+            <label for="email">Email</label><input type="email" name="email" id="email" placeholder="Your email address"
+                required>
+            <label for="phone">Phone Number</label><input type="tel" name="phone"
+                placeholder="Your Swedish phone number" maxlength="10" id="phone" required>
+        </fieldset>
+        <fieldset>
+            <legend>Delivery Options</legend>
+            <label for="options">How would you like to receive your pet?</label>
+            <select name="options" id="options">
+                <option value="">-- Please select an option --</option>
+                <option value="pickup">Pickup in store</option>
+                <option value="delivery">Delivery by courier</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Type of Pet</legend>
+            <label for="type">Please select the pet you want</label>
+            <select name="types" id="type">
+                <option value="">-- Please select an option --</option>
+                <option value="cat">Cat</option>
+                <option value="dog">Dog</option>
+                <option value="rabbit">Rabbit</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Collar Size</legend>
+            <input type="radio" name="sizes" id="xxs" value="XXS"><label for="xxs">XXS</label>
+            <input type="radio" name="sizes" id="xs" value="XS"><label for="xs">XS</label>
+            <input type="radio" name="sizes" id="s" value="S"><label for="s">S</label>
+            <input type="radio" name="sizes" id="m" value="M"><label for="m">M</label>
+            <input type="radio" name="sizes" id="l" value="L"><label for="l">L</label>
+            <input type="radio" name="sizes" id="xl" value="XL"><label for="xl">XL</label>
+        </fieldset>
+        <fieldset>
+            <legend>Online Account</legend>
+            <label for="username">Username</label><input type="text" name="username" id="username">
+            <label for="password">Password</label><input type="password" placeholder="minimum 8 characters">
+        </fieldset>
+        <fieldset>
+            <legend>Other Requirements</legend>
+            <label>Please specify if there is anything else you'd like in your pet.</label>
+            <textarea name="reqs" id="requirements" rows="20" cols="60"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Consent</legend>
+            <input type="checkbox" name="marketing" id="marketing"><label for="marketing">I consent to marketing
+                information to be sent to me via email.</label>
+        </fieldset>
+        <input type="submit" name="submit">
+    </form>
+</body>
+</html>
