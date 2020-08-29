@@ -8,7 +8,7 @@
     <form>
         <fieldset>
             <legend>Information about You</legend>
-            <label for="name">Name</label><input type="text" name="name" id="name" placeholder="Your full name"
+            <label for="name">Name</label><input type="text" name="name" id="name" placeholder="Your full name" minlength="10" maxlength="50"
                 required>
             <label for="email">Email</label><input type="email" name="email" id="email" placeholder="Your email address"
                 required>
@@ -46,7 +46,7 @@
         <fieldset>
             <legend>Online Account</legend>
             <label for="username">Username</label><input type="text" name="username" id="username">
-            <label for="password">Password</label><input type="password" placeholder="minimum 8 characters">
+            <label for="password">Password</label><input type="password" id="password" placeholder="minimum 8 characters" minlength="8">
         </fieldset>
         <fieldset>
             <legend>Other Requirements</legend>
